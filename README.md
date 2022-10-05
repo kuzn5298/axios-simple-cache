@@ -67,7 +67,7 @@ setupAxiosCache(axiosInstance);
 -   [ ] Add JSDoc
 -   [ ] Add cache options
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/kuzn5298/axios-simple-cache/issues) for a full list of proposed features (and known issues).
 
 ## ⭐️ Maintainers
 
