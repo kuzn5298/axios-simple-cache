@@ -1,6 +1,6 @@
 {
     "name": "axios-simple-cache",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Simple cache for axios, works in the browser and node",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
