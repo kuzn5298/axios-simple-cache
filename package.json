@@ -1,0 +1,64 @@
+{
+    "name": "axios-simple-cache",
+    "version": "0.1.0",
+    "description": "Simple cache for axios, works in the browser and node",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:types",
+        "build:cjs": "tsc -p config/tsconfig.cjs.json",
+        "build:esm": "tsc -p config/tsconfig.esm.json",
+        "build:types": "tsc -p config/tsconfig.types.json",
+        "clean": "rm -rf dist",
+        "lint": "eslint src --fix",
+        "package": "npm run build && npm pack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kuzn5298/axios-simple-cache.git"
+    },
+    "keywords": [
+        "axios",
+        "cache",
+        "node",
+        "browser",
+        "interceptor",
+        "adapter",
+        "wrapper"
+    ],
+    "author": {
+        "email": "kuzn5298@gmail.com",
+        "name": "Nikita Kuznetsov",
+        "url": "https://github.com/kuzn5298"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kuzn5298/axios-simple-cache/issues"
+    },
+    "homepage": "https://github.com/kuzn5298/axios-simple-cache#readme",
+    "peerDependencies": {
+        "axios": ">=0.13.0"
+    },
+    "devDependencies": {
+        "@types/md5": "^2.3.2",
+        "@typescript-eslint/eslint-plugin": "^5.36.2",
+        "@typescript-eslint/parser": "^5.36.2",
+        "axios": "^0.27.2",
+        "eslint": "^8.24.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.7.1",
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "md5": "^2.3.0"
+    },
+    "lint-staged": {
+        "*.ts": "npm run lint",
+        "*.{js,md,json,yaml,yml}": "prettier --write"
+    }
+}
